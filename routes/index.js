@@ -5,9 +5,4 @@ const authRoutes = require('./authRoutes');
 router.use('/api', apiRoutes);	
 router.use('/auth', authRoutes);
 
-router.get('/', (req, res) => {
-  res.send('This is from Routes index.js')
-});
-
-
 module.exports = router;
