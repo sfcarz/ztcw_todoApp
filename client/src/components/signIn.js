@@ -160,9 +160,9 @@ export default function SignIn(props) {
           </Grid>
         
       </div>
-      <Box mt={8}>
+      {/* <Box mt={8}>
         <Copyright />
-      </Box>
+      </Box> */}
     </Container>
   );
 }

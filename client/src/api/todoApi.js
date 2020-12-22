@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export async function signIn(username, password){
-    console.log(username, password);
+    // console.log(username, password);
     try {
         const result = await axios.post('/auth/signin', { username: username, password: password })
         return result.data
@@ -20,7 +20,7 @@ export async function signUp(firstName, lastName, username, password) {
 }
 
 export async function getTodos(token) {
-    console.log(token);
+    // console.log(token);
     try {
         const result = await axios.get('/api/todo', { headers: { 'Authorization': token}})
         return result.data
