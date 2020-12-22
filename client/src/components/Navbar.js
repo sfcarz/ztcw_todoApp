@@ -11,7 +11,13 @@ function App() {
     return (
         <div className="page">
             <Layout fixedHeader>
-                <Header className="header-color" title={<Link style={{ textDecoration: 'none', color: isAuthenticated ? 'white' : 'red' }} to="/">ZWTC ToDo App</Link>} scroll >
+                <Header
+                    className="header-color"
+                    title={<Link
+                        style={{ textDecoration: 'none', color: isAuthenticated ? 'white' : 'red' }}
+                        to="/">ZWTC ToDo App
+                        </Link>}
+                    scroll >
                     <Navigation>
                         <Link to="/signIn">Sign In</Link>
                         <Link to="/signUp">Sign Up</Link>

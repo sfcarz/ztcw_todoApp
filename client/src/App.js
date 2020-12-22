@@ -9,10 +9,10 @@ import Components from './components/component';
 
 const Main = () => (
     <Switch>
-        <Route path="/" component={signIn} />
+        <Route path="/signIn" component={signIn} />
         <Route path="/signUp" component={signUp} />
         <Route path="/component" component={Components} />
-        {/* <Route path="/todo" component={TodosPage} /> */}
+        <Route exact path="/" component={signIn} />
     </Switch>
 )
 
