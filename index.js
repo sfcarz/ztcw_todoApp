@@ -27,5 +27,5 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 app.listen(process.env.PORT, () => {
-  console.log('Server started listening on PORT http://localhost:3001');
+  console.log('Server started listening on http://localhost:3001', PORT);
 });
