@@ -50,7 +50,9 @@ function Weather() {
           <form>
             <input
               value={query}
-              onChange={(e) => setQuery(e.target.value)} placeholder={query} />
+                onChange={(e) => setQuery(e.target.value)}
+                placeholder='San Diego, USA'
+              />
             <button onClick={(e) => handleSearch(e)}>Search</button>
           </form>
         </div>
